@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمارة المعز</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&display=swap">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>عمارة المعز</h1>
+        <!-- hero -->
+        <section class="container">
+            <h2></h2>
+            <!-- src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"  -->
+            <!-- environment-image="assets/puresky_1k.hdr" -->
+            <model-viewer 
+                class="full-viewer"
+                src="assets/Model-A-First-Floor.glb" 
+                alt="A large 3D model"
+                ar
+                shadow-intensity="1" 
+                camera-controls 
+                auto-rotate
+                exposure="1.2"
+                controls
+                skybox-image="assets/partly_cloudy_puresky_1k.hdr"
+            >
+            </model-viewer>
+            <p style="text-align: center; margin-top: 20px;">This is the primary GLB model Created By Gharieb Khalifa</p>
+        </section>
+        <!-- cards -->
+        <section class="container">
+            <h2>النماذج</h2>
+            <div class="card-section">
+                
+                <div class="model-card">
+                    <div class="model-view">
+                        <div class="model-container">
+                            <!-- skybox-image="assets/pu" -->
+                            <model-viewer
+                                class="card-model-viewer"
+                                src="assets/Model-A-First-Floor.glb"
+                                skybox-image="assets/dusk_puresky_1k.hdr"
+                                alt="Model-B-First-Floor"
+                                camera-controls
+                                shadow-intensity="1"
+                                exposure="1"
+                            ></model-viewer>
+                        </div>
+                        <div class="model-details" dir="rtl">
+                            <h3>النموذج: (أ)</h3>
+                            <p>الوجهه الامامية</p>
+                            <ul>
+                                <li>المساحة الكلية: <span>155</span> متر مربع</li>
+                                <li>صالة</li>
+                                <li>3 غرفة</li>
+                                <li> 2 حمام</li>
+                                <li> مطبخ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="model-image">
+                        <img src="models/model-a-z-m.png" class="model-image" alt="Model-A-Z"/>
+                    </div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-container">
+                        <model-viewer
+                            class="card-model-viewer"
+                            src="assets/Model-A-First-Floor.glb"
+                            alt="Model-A-First-Floor"
+                            camera-controls
+                            shadow-intensity="1"
+                        ></model-viewer>
+                    </div>
+                    <div class="model-details">
+                        <h3>النموذج: (ب)</h3>
+                        <p>الوجهه الخلفية</p>
+                        <ul>
+                            <li>المساحة الكلية: <span>160</span> متر مربع</li>
+                            <li>صالة</li>
+                            <li>3 غرفة</li>
+                            <li> 2 حمام</li>
+                            <li> مطبخ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider -->
+        <section class="container">
+            <h2>جاليري</h2>
+            <div class="slider-container" id="slider-container">
+                
+            </div>
+
+            <div class="slider-dots" id="slider-dots">
+                
+            </div>
+        </section>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
