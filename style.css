@@ -48,7 +48,7 @@
         }
 
         .model-card {
-            max-height: 900px;
+            /* max-height: 900px; */
             display: flex;
             flex-direction: column;
             background-color: #fff;
@@ -78,6 +78,9 @@
             .card-section {
                 flex-direction: column;
             }
+            .model-card {
+            max-height: 900px;
+        }
         }
 
         .model-container {
