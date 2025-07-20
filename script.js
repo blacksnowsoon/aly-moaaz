@@ -3,7 +3,7 @@
 $(document).ready(function() {
     // --- JavaScript for the Image Slider ---
     let slideIndex = 1;
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 8; i++) {
         $("#slider-container").append(
             `<img class="slider-image" src="images/img-${i+1}.png" alt="image-${i+1}">`
         )
